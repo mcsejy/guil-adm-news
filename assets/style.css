@@ -29,44 +29,52 @@ body {
   box-shadow: 0 0 24px rgba(0,0,0,0.25);
 }
 
-/* 마스트헤드 */
+/* 마스트헤드 (뉴욕타임즈풍 네임플레이트) */
 .masthead {
   text-align: center;
-  padding: 4px 0 2px;
-}
-
-.masthead-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-family: 'Noto Serif KR', serif;
-  font-weight: 900;
-  font-size: 36px;
-  margin: 0;
-  letter-spacing: 0.02em;
+  padding: 10px 0 0;
 }
 
 .masthead-mark {
-  width: 34px;
-  height: 34px;
+  display: block;
+  width: 42px;
+  height: 37px;
   object-fit: contain;
+  margin: 0 auto 4px;
+}
+
+.masthead-title {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 900;
+  font-size: 50px;
+  margin: 0;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
 }
 
 .masthead-sub {
   font-family: 'Noto Serif KR', serif;
-  font-size: 10px;
+  font-style: italic;
+  font-size: 10.5px;
   color: var(--muted);
-  margin: 3px 0 0;
+  margin: 6px 0 9px;
+  letter-spacing: 0.01em;
 }
 
 .masthead-sub strong {
   color: var(--accent);
+  font-style: normal;
+}
+
+hr.rule-thin-top {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 0 0 3px;
 }
 
 hr.rule-thick {
   border: none;
-  border-top: 3px solid var(--rule);
+  border-top: 4px solid var(--rule);
   margin: 0 0 10px;
 }
 
@@ -480,7 +488,7 @@ hr.rule-thin {
     padding-top: 10px;
   }
   .masthead-title {
-    font-size: 28px;
+    font-size: 34px;
   }
   .info-compare {
     grid-template-columns: 1fr;
