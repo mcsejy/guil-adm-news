@@ -35,21 +35,23 @@ body {
   padding: 10px 0 0;
 }
 
-.masthead-mark {
-  display: block;
-  width: 42px;
-  height: 37px;
-  object-fit: contain;
-  margin: 0 auto 4px;
-}
-
 .masthead-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   font-family: 'Noto Serif KR', serif;
   font-weight: 900;
-  font-size: 50px;
+  font-size: 34px;
   margin: 0;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   line-height: 1.1;
+}
+
+.masthead-mark {
+  width: 32px;
+  height: 28px;
+  object-fit: contain;
 }
 
 .masthead-sub {
@@ -488,7 +490,7 @@ hr.rule-thin {
     padding-top: 10px;
   }
   .masthead-title {
-    font-size: 34px;
+    font-size: 26px;
   }
   .info-compare {
     grid-template-columns: 1fr;
