@@ -48,11 +48,21 @@ body {
 }
 
 .masthead-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   font-family: 'Noto Serif KR', serif;
   font-weight: 900;
   font-size: 36px;
   margin: 0;
   letter-spacing: 0.02em;
+}
+
+.masthead-mark {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
 }
 
 .masthead-sub {
